@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patty Bactad">
+    <meta name="description" meta content="Patty Bactad Website Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patty Bactad Website Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <!-- Style -->
+    <link rel="stylesheet" href="css/test_v1.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <section class="logo">
+            <img src="./assets/pb-logo1.png" alt="Patty Bactad Logo" class="icon">PATTY BACTAD
+        </section>
+        <section>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+    <nav id="burger-nav">
+        <section class="logo">Patty Bactad</section>
+        <section class="burger-menu">
+            <section class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+            <section class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </section>
+        </section>
+    </nav>
+    
+
+
+    <!-- PROFILE -->
+    <section id="profile" class="wrapper">
+        <section class="pic-container">
+            <img src="./assets/1.png" alt="Patty's picture">
+        </section>
+        <section class="text">
+            <p class="text__p1">Hello, I'm</p>
+            <h1 class="title">Patty Bactad</h1>
+            <p class="text__p2">Web & Graphic Designer</p>
+            <section class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/PattyBactad-Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </section>
+            <br><br>
+            <section id="socials">
+                <img src="./assets/linkedin.png" alt="My-LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/pattybactad/'"/>
+                <img src="./assets/behance.png" alt="My-Behance" class="icon" onclick="location.href='https://www.behance.net/bactadpatty'"/>
+                <img src="./assets/ig.png" alt="My-Instagram" class="icon" onclick="location.href='https://www.instagram.com/_patch.design/'"/>
+                <img src="./assets/github.png" alt="My-Github" class="icon" onclick="location.href='https://github.com/pattybactad'"/>
+            </section>
+        </section>
+    </section>
+    
+
+
+    <!-- ABOUT -->
+    <section id="about" class="wrapper">
+        <p class="text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <section class="section-container">
+            <section class="pic-container">
+                <img src="./assets/about.png" alt="Profile" class="about-pic"/>
+            </section>
+            <section class="about-details-container">
+                <section class="about-container">
+                    <section class="about-box">
+                        <img src="./assets/medal.png" alt="exp icon" class="icon" /></br></br>
+                        <h3 class="about-box-text">Experience</h3>
+                        <!-- <p>1 year <br/>Web Design & Development</p> -->
+                        <p class="about-text">7.5 years as a Cybersecurity Professional</p>
+                    </section>
+                    <section class="about-box">
+                        <img src="./assets/education.png" alt="education icon" class="icon" /></br></br>
+                        <h3 class="about-box-text">Education</h3>
+                        <p class="about-text">Post-secondary Certificate in Web Design & Development (2024) </p>
+                    </section>
+                    <section class="about-box">
+                        <img src="./assets/education.png" alt="education icon" class="icon" /></br></br>
+                        <h3 class="about-box-text">Education</h3>
+                        <p class="about-text">Post-secondary Certificate in Graphic Design for Print and Web (2025)</p>
+                    </section>
+                </section>
+                <section class="text-container">
+                    <section>
+                        <p>Former Senior Information Security Engineer with 7.5 years of experience in Cybersecurity — I honed my expertise in security incident investigation, network protection, and fraud detection. Now, with a background in web & graphic design, I merge technical precision with creative innovation.</p>
+                    </section>
+                    <section>
+                        <p>Passionate about crafting visually striking and secure digital experiences, I integrate cybersecurity principles into web and graphic design. With a sharp analytical mindset and a bold creative approach, I’m ready to contribute to projects that demand both security and aesthetic excellence.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="proj">
+        <p class="text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <section class="projects-details-container">
+            
+            <section class="projects-container">
+
+                <!-- Project 1 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    <section class="article-container">
+                        <img src="./projects/cookiss.png" alt="Proj 1" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal1">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Cookiss Branding</h3>
+            
+                    <section class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel1"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2>Cookiss Branding</h2>
+                                    <img src="./projects/cookiss2.png" alt="Proj 1" class="project-img">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Project 2 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal2">
+                    <section class="article-container">
+                        <img src="./projects/kogarashi.png" alt="Proj 2" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal2">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Kogarashi Restaurant Menu</h3>
+            
+                    <section class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel2" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel2"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2>Kogarashi Restaurant Menu</h2>
+                                    <img src="./projects/kogarashi2.png" alt="Proj 2" class="project-img">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Project 3 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal3">
+                    <section class="article-container">
+                        <img src="./projects/golden.png" alt="Proj 3" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal3">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Golden Sprouts Heirloom</h3>
+            
+                    <section class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModalLabel3" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel3"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2>Golden Sprouts Heirloom</h2>
+                                    <img src="./projects/golden2.png" alt="Proj 3" class="project-img">
+                                    
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+            <section class="projects-container">
+                <!-- Project 4 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal4">
+                    <section class="article-container">
+                        <img src="./projects/baggio.jpg" alt="Proj 4" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal4">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Baggio Pasta Packaging</h3>
+            
+                    <section class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="myModalLabel4" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel4"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2>Baggio Pasta Packaging</h2>
+                                    <img src="./projects/baggio2.png" alt="Proj 4" class="project-img">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Project 5 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal5">
+                    <section class="article-container">
+                        <img src="./projects/vinyl.png" alt="Proj 5" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal5">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Syris Album Presskit</h3>
+            
+                    <section class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="myModalLabel5" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel5"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2> SyrisAlbum Presskit</h2>
+                                    <img src="./projects/vinyl2.png" alt="Proj 5" class="project-img">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Project 6 -->
+                <section class="details-container color-container" data-bs-toggle="modal" data-bs-target="#myModal6">
+                    <section class="article-container">
+                        <img src="./projects/PeterPan-mockup.png" alt="Proj 6" class="project-img" data-bs-toggle="modal" data-bs-target="#myModal6">
+                    </section>
+            
+                    <h3 class="projects-sub-title project-title">Peter Pan Book Cover</h3>
+            
+                    <section class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="myModalLabel6" aria-hidden="true">
+                        <section class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <section class="modal-content">
+                                <section class="modal-header">
+                                    <h1 class="modal-title fs-5" id="myModalLabel6"></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </section>
+                                <section class="modal-body">
+                                    <h2>Peter Pan Book Cover</h2>
+                                    <img src="./projects/PeterPan2.png" alt="Proj 6" class="project-img">
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+        </section>
+    </section>
+    
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrapper">
+        <p class="text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <section class="contact-info-upper-container">
+            <section class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:by.patchdesign@gmail.com@gmail.com">Email</a></p>
+            </section>
+            <section class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/pattybactad/">LinkedIn</a></p>
+            </section>
+        </section>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="./assets/pb-logo1.png" alt="Patty Bactad Logo" class="icon mylogo"></nav>
+        <nav>
+            <section class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <p>Copyright &#169; 2025 Patty Bactad. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
