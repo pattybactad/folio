@@ -302,10 +302,16 @@ a:hover {
     color: white;
 }
 
-.arrow {
+.arrow-about {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+.arrow-proj {
+    position: absolute;
+    right: -5rem;
+    bottom: 63.5rem;
 }
 
 /* for about */
